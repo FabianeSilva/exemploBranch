@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tarefa-api
+    username: postgres
+    password: Sql#55
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
